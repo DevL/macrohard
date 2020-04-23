@@ -8,7 +8,13 @@ _Your entire team, freshly recruited from all walks of life, had to work from ho
 
 _Equipped with a few good terminal sessions each, you accessed the company unretired mainframe. The plan was for you to not be alone on your first day at work and you all expected to be guided by one of the resident neckbeards. Thus it came as a stark surprise when your shared terminal displayed the message "Out for lunch. You figure it out!". A moment of bewilderment passed as you collectively scratched your heads before another voice was heared over the Moogle Greet™ video conference._
 
-> Hello? Is anyone there? Ah, good! It's me, your Commissioned Chief Coach Product Owner, or C3PO for short. I need your help. You might have heard of the Y2K problem, yes? Well, have you heard of the Y1.9K problem? No? Right, from the start then. It all began with a spreadsheet...
+> Hello? Is anyone there? Ah, good! 
+>
+> It's me, your Commissioned Chief Coach Product Owner, or C3PO for short. I need your help.
+>
+> You might have heard of the Y2K problem, yes? Well, have you heard of the Y1.9K problem?
+>
+> No? Right, from the start then. It all began with a spreadsheet...
 
 ---
 
