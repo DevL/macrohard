@@ -24,6 +24,9 @@ Initiate initiates with installation instructions
 Prepare two (2) reasonably capable terminal sessions/tabs/windows.
   E.g. iTerm2 on macOS.
 
+Ensure that ssh is installed on your workstation.
+  Unless you have Windows, you should be good to go already.
+
 If possible, use two (2) monitors.
   One for video conferencing.
   One for the two terminals.
