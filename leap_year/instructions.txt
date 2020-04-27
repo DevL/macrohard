@@ -1,0 +1,45 @@
+Welcome to the micro text editor!
+
+Don't worry, it's not Vim.
+Let's get to know it a little.
+
+Go to line 12 by using Ctrl-L. Notice how this opens the command line at the very
+bottom of the screen, allowing you to enter a line number. Once there, skip ahead
+a word at a time by using Alt-Right. Remember, issue the command, don't join the movement.
+When you're in position, use Shift-Alt-Right to select a word at a time and Shift-Right to
+select a character at a time.
+
+SELECT > THIS PART < ONLY!
+
+Got it selected? Excellent. Copy it by using Ctrl-C. Then go to line 19. Once there,
+skip to the end of the line using End. On Macs lacking the End button, you can use Fn-Right.
+Fn-Left is the home button. Fn-Up and Fn-Down are PageUp and PageDown by the way. To paste,
+use Ctrl-V. Then cut the first word on that line by selecting it and issuing Ctrl-X.
+
+PASTE AT THE END OF THE LINE:
+
+Nice! Almost ready to start the exercise. Let's open up the code and the tests side-by-side,
+shall we? Start with the tests. Open the command line with Ctrl-E. Use the vsplit command
+followed by the file name (leap_year_test.py). Notice that tab completion works.
+
+You should now have the tests open in a split to the right. We'll get to them in a minute.
+First we should save this file and open the code in its place though.
+
+Jump back to this split by using Ctrl-W. That's the command to jump between splits.
+
+Save this file by using Ctrl-S. Open the code (leap_year.py) by using Ctrl-O and entering
+the file name as you did with the tests. Notice how this file is replaced with that file.
+
+Before you close this file though, make sure that you have the tests continuosly running in
+another terminal. On this machine, pytest-watch is installed and aliased as "ptw".
+
+There's much more to the micro editor than this and you can use Ctrl-G to open various help
+topics. For example, Alt-Shift-Up/Down gives you multiple cursors. Esc removes them all.
+
+There are also a number of custom key bindings on this machine. Using Esc as above is one of
+them. Ctrl-J for joining lines and Ctrl-U for commenting a line are another two.
+
+But don't worry if you don't remember all of this during the exercise. You'll figure it all
+out as a team.
+
+Good luck and listen to your C3PO!
