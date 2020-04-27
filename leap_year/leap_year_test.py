@@ -20,11 +20,14 @@ from leap_year import leap_year, LeapYearError
         (4, False, {"julian": True}),
         (8, True, {"julian": True}),
         (12, True, {"julian": True}),
+        (1700, True, {"julian": True}),
+        (1700, False, {}),
         (1789, False, {}),
         (1800, False, {}),
         (1880, True, {}),
         (1899, False, {}),
         (1900, False, {}),
+        (1900, True, {"spreadsheet": True}),
         (1901, False, {}),
         (1912, True, {}),
         (1929, False, {}),
@@ -35,6 +38,8 @@ from leap_year import leap_year, LeapYearError
         (2020, True, {}),
         (4816, True, {}),
         (4817, False, {}),
+        (4820, True, {"ignore_astronomical_drift": True}),
+        (4820, True, {"julian": True})
     ],
 )
 def test_leap_year(year, is_leap_year, opts):
@@ -45,12 +50,13 @@ def test_leap_year(year, is_leap_year, opts):
     "year, message, opts",
     [
         (0, "Year 0 does not exist", {}),
+        (0, "Year 0 does not exist", {"julian": True}),
         ("1900", "Year must be an integer", {}),
         (1900.1, "Year must be an integer", {}),
-        (-1, "Year -1 is not gregorian", {}),
-        (1581, "Year 1581 is not gregorian", {}),
-        (1582, "Year 1582 is not julian", {"julian": True}),
-        (4818, "Out of sync with astronomical calendar in year 4818", {}),
+        (-1, "Year -1 precedes the Gregorian calendar", {}),
+        (1581, "Year 1581 precedes the Gregorian calendar", {}),
+        (-46, "Year -46 precedes the Julian calendar", {"julian": True}),
+        (4818, "The Gregorian calendar is out of sync with the astronomical calendar in year 4818", {}),
     ],
 )
 def test_leap_year_handles_bad_input(year, message, opts):
