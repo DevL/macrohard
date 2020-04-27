@@ -1,0 +1,10 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "Alt-End": "NextTab",
+    "Alt-Home": "PreviousTab",
+    "Alt-j": "lua:joinLines.joinLines",
+    "CtrlG": "command-edit:help ",
+    "CtrlJ": "lua:joinLines.joinLines",
+    "CtrlU": "lua:comment.comment",
+    "Esc": "RemoveAllMultiCursors"
+}
