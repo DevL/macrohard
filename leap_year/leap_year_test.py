@@ -6,6 +6,7 @@ from leap_year import leap_year, LeapYearError
     "year, is_leap_year, opts",
     [
         (-45, False, {"julian": True}),
+        (-44, False, {"julian": True}),
         (-42, True, {"julian": True}),
         (-40, False, {"julian": True}),
         (-39, True, {"julian": True}),
@@ -29,6 +30,7 @@ from leap_year import leap_year, LeapYearError
         (1900, False, {}),
         (1900, True, {"spreadsheet": True}),
         (1901, False, {}),
+        (1901, False, {"spreadsheet": True}),
         (1912, True, {}),
         (1929, False, {}),
         (1960, True, {}),
@@ -60,5 +62,5 @@ def test_leap_year(year, is_leap_year, opts):
     ],
 )
 def test_leap_year_handles_bad_input(year, message, opts):
-    with pytest.raises(LeapYearError, match="message"):
+    with pytest.raises(LeapYearError, match=message):
         leap_year(year, **opts)
