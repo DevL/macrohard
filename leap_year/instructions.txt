@@ -16,7 +16,7 @@ skip to the end of the line using End. On Macs lacking the End button, you can u
 Fn-Left is the home button. Fn-Up and Fn-Down are PageUp and PageDown by the way. To paste,
 use Ctrl-V. Then cut the first word on that line by selecting it and issuing Ctrl-X.
 
-PASTE AT THE END OF THE LINE:
+PASTE AT THE END OF THE LINE:THISPASTE
 
 Nice! Almost ready to start the exercise. Let's open up the code and the tests side-by-side,
 shall we? Start with the tests. Open the command line with Ctrl-E. Use the vsplit command
