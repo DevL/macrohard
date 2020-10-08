@@ -42,6 +42,6 @@ If possible, use two (2) monitors.
 
 Rate of upload: abysmal.
 Transmission interrupted.
-Estimated time of next set of instructions: 2020-06-12.
+Estimated time of next set of instructions: 2020-10-15.
 Stand by...
 ```
