@@ -1,6 +1,6 @@
 # Welcome to Macrohard
 
-_It was an unusal first day at the Macrohard™ office._
+_It was an unusual first day at the Macrohard™ office._
 
 _In fact, it wasn't a day at the office at all._
 
