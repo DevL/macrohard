@@ -33,7 +33,7 @@ from leap_year import leap_year, LeapYearError
         (1900, True, {"julian": True, "spreadsheet": True}),
         (1901, False, {}),
         (1901, False, {"spreadsheet": True}),
-        (1901, False, {"spreadsheet": True, "julian": True, }),
+        (1901, False, {"spreadsheet": True, "julian": True}),
         (1912, True, {}),
         (1929, False, {}),
         (1960, True, {}),
@@ -41,15 +41,27 @@ from leap_year import leap_year, LeapYearError
         (1980, True, {}),
         (2000, True, {}),
         (2020, True, {}),
-        (4816, True, {}),
-        (4817, False, {}),
-        (4818, False, {"julian": True}),
-        (4820, True, {"ignore_astronomical_drift": True}),
-        (4820, True, {"julian": True})
+        (3200, True, {}),
+        (3200, False, {"astronomical_reform": True}),
+        (3600, True, {}),
+        (3600, True, {"astronomical_reform": True}),
+        (4000, True, {}),
+        (4000, True, {"astronomical_reform": True}),
+        (4400, True, {}),
+        (4400, False, {"astronomical_reform": True}),
+        (4500, False, {}),
+        (4500, True, {"astronomical_reform": True}),
+        (4800, True, {}),
+        (4800, False, {"astronomical_reform": True}),
+        (5000, False, {}),
+        (5000, True, {"astronomical_reform": True}),
     ],
 )
 def test_leap_year(year, is_leap_year, opts):
     assert leap_year(year, **opts) == is_leap_year
+
+
+"A possible reform would be to omit the leap day in 3200, keep 3600 and 4000 as leap years, and thereafter make all centennial years common except 4500, 5000, 5500, 6000"
 
 
 @pytest.mark.parametrize(
@@ -62,7 +74,6 @@ def test_leap_year(year, is_leap_year, opts):
         (-1, "Year -1 precedes the Gregorian calendar", {}),
         (1581, "Year 1581 precedes the Gregorian calendar", {}),
         (-46, "Year -46 precedes the Julian calendar", {"julian": True}),
-        (4818, "The Gregorian calendar is out of sync with the astronomical calendar in year 4818", {}),
     ],
 )
 def test_leap_year_handles_bad_input(year, message, opts):
