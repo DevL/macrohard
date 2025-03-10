@@ -1,5 +1,7 @@
 # Welcome to Macrohard
 
+**NB:** This repository has been moved to [https://codeberg.org/DevL/macrohard](https://codeberg.org/DevL/macrohard).
+
 _It was an unusual first day at the Macrohard™ office._
 
 _In fact, it wasn't a day at the office at all._
